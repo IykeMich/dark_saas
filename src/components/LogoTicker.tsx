@@ -34,8 +34,8 @@ export const LogoTicker = () => {
               repeatType: "loop",
             }}
           className="flex gap-16 pr-14 flex-none">
-            {images.map((imageSrc) => (
-              <Image src={imageSrc.src} alt={imageSrc.alt} className="flex-none h-8 w-auto"/>
+            {images.map((imageSrc, index) => (
+              <Image key={index} src={imageSrc.src} alt={imageSrc.alt} className="flex-none h-8 w-auto"/>
             ))}
             {images.map((imageSrc, index) => (
               <Image key={index} src={imageSrc.src} alt={imageSrc.alt} className="flex-none h-8 w-auto"/>
